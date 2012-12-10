@@ -1,3 +1,73 @@
-// Place all the styles related to the users controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1
+  {
+  text-align: left;
+  color: #000000;
+  font-size: 50px;
+  text-decoration: underline;
+}
+p
+  {
+  font-family: "Times New Roman";
+  font-size: 30px;
+}
+p.center {
+  text-align: center;
+}
+div{
+  color: #8b0000;
+
+}
+a:link {
+  color:#cd5c5c;
+  text-decoration: none;
+}      /* unvisited link */
+a:visited {
+  color:#f5deb3;
+  text-decoration: none;
+}  /* visited link */
+a:hover {
+  color:#6b8e23;
+  text-decoration: none;
+}  /* mouse over link */
+a:active {
+  color:#0000FF;
+  text-decoration: none;
+} /* selected link */
+table{
+  border: #e6e6fa;
+  vertical-align: 40;
+  text-align: center;
+  color: #8b0000;
+}
+td{
+  color: #556b2f;
+}
+table.center{
+  margin-left: auto;
+  margin-right: auto;
+}
+a.new_user{
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #ffffff;
+  background: #006400;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+div#sign{
+  margin-left: auto;
+  margin-right: 50;
+  display: block;
+  text-align: center;
+  width: 210px;
+  color: #ffffff;
+  background-color: #a9a9a9;
+
+}
+
+

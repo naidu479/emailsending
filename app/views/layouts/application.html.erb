@@ -2,11 +2,21 @@
 <html>
 <head>
   <title>Emails1</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "application","users", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<div id="sign">
+<table>
+  <tr>
+    <td><%= link_to "Home", :action=>'index' %>  </td>
+    <td><%= link_to "Register",:action=>'new' %> </td>
+    <td><%= link_to "Login" %></td>
+    <td><%= link_to "about us" %></td>
+  </tr>
+</table>
+</div>
 
 <%= yield %>
 
@@ -14,3 +24,17 @@
 
 </body>
 </html>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/>
+
+<div id="footer" style="background-color: #556b2f;text-align: center;tab-size: 200*50;">
+  <p id="copyright">Copyright © ravikishore479@gmail.com</p>
+</div>
