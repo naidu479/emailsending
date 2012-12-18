@@ -1,6 +1,7 @@
 Thank you for registering!
-
+<%= require = 'base64' %>
 <%= @user.email %>
+<%= Base64.decode64(@user.password_salt) %>
 
 
 

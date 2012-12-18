@@ -20,6 +20,13 @@ ActiveRecord::Schema.define(:version => 20121206094454) do
     t.datetime "updated_at",    :null => false
     t.string   "password_hash"
     t.string   "password_salt"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.string   "sex"
+    t.string   "mobileno"
+    t.string   "address"
+    t.string   "passportno"
+    t.string   "pancardno"
   end
 
 end

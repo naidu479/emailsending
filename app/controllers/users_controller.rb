@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+
   def index
     @user = User.all
   end
@@ -33,4 +34,5 @@ class UsersController < ApplicationController
     @user.destroy
     redirect_to @user,:notice => "User successfully deleted!"
   end
+
 end

@@ -1,0 +1,15 @@
+<%= form_tag login_path do %>
+
+
+    <div class="field">
+      <%= label_tag :firstname %><br />
+      <%= text_field_tag :firstname %>
+    </div>
+    <div class="field">
+      <%= label_tag :lastname%><br />
+      <%= text_field_tag :lastname %>
+    </div>
+    <div class="actions">
+      <%= submit_tag "submit" %>
+    </div>
+<% end %>

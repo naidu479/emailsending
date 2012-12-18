@@ -1,7 +1,13 @@
 Emails1::Application.routes.draw do
-
+  get "log_out" => "login#destroy", :as => "log_out"
+  get "home" => "users#index", :as => "home"
+  get  "sign_up" => "users#new", :as => "sign_up"
+  get "login" => "login#new", :as => "login"
+  get "welcome" => "login#show", :as => "welcome"
+  get "account" => "login#edit", :as => "account"
 
   resources :users
+  resources :login
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
