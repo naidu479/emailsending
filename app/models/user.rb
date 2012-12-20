@@ -2,7 +2,7 @@ require 'openssl'
 require 'base64'
 
 class User < ActiveRecord::Base
-  attr_accessible :email, :name, :password, :password_confirmation
+  attr_accessible :email, :name, :password, :password_confirmation,:firstname, :lastname,:mobileno,:address,:sex,:passportno,:pancardno
   attr_accessor :password
   before_save :encrypt_password
 

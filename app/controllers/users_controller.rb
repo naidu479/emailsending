@@ -24,7 +24,8 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
     if @user.update_attributes(params[:user])
-      redirect_to @user,:notice => 'User was successfully updated!'
+      flash[:notice] = "User Successfully added!"
+      redirect_to :action =>'show',:controller=>"login"
     else
       render action: "edit"
     end
