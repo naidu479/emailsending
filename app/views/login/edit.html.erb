@@ -1,3 +1,4 @@
+<h2>Edit Personal Details</h2>
 <%= form_for(@user) do |f| %>
 
 
@@ -29,8 +30,16 @@
       <%= f.label :pancardno%><br />
       <%= f.text_field :pancardno %>
     </div>
+    <p>
+      <% if @user.image.exists? %>
+      <%= image_tag(@user.image.url,:height => 100,:width=>100)%><br/>
+      <% end %>
+      <%= f.label :image, "Attach an Image" %><br />
+      <%= f.file_field :image %>
+    </p>
+
     <div class="actions">
       <%= f.submit "submit" %>
     </div>
 <% end %>
-<%= link_to 'Back', :action=>'show' %>
+<%= link_to 'Back', :action=>'show',:controller=>'users',:id => @user.id %>
